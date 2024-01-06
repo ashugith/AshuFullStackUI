@@ -1,6 +1,5 @@
 let boxes = document.querySelectorAll(".box");
 let reset = document.querySelector("#reset");
-let msg = document.querySelector("#msg")
 //track a value
 let turno = true; //playerx , playero
 const winpatterns = [[0,1,2],
@@ -31,7 +30,7 @@ const enableBoxes = () => {
       msg.innerText = `Congratulations , Winner is ${winner}`;
 //     msg.innerText = (`Congratulations, Winner is ${winner}`);
     disableBoxes();
-  }
+   }
 boxes.forEach((box) => {
     box.addEventListener("click",() => {
         console.log("box was clicked");
@@ -60,7 +59,6 @@ const checkWinner = () => {
     if(pos1val !== "" && pos2val != "" && pos3val != ""){
         if(pos1val === pos2val && pos2val === pos3val){
             console.log("Winner", pos1val);
-               showWinner(pos1val)
                return true;
         }
     }
