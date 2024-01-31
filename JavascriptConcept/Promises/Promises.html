@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+</head>
+<body>
+    <h1>Promises in js</h1>
+    <script>
+        let test = false;
+        let prom = new Promise(function(resolve, reject)
+        {
+            if(test){
+                resolve("I am resolve")
+
+            }
+            else{
+                reject("I am Reject")
+            }
+
+        })
+        console.log(prom)
+        function promiseHandler (data) {
+            return new Promise(function(resolve, reject){
+                if(data){
+                    resolve("I am Resolve")
+                }
+                else{
+                    reject("I am Reject")
+                }
+            })
+        }
+        console.log(promiseHandler(true))
+
+        
+    </script>
+    
+</body>
+</html>
