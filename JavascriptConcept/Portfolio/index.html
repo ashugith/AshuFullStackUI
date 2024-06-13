@@ -1,8 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Ashu ' s Portfolio</title>
-        <link href="index.css" rel="stylesheet">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <link href="index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="nav-container">
+            <nav>
+                <img src="logo2_img.png" width="200px" height="120px">
+                <ul>
+                    <li>
+                        <a href="#header">Home</a>
+                    </li>
+                    <li>
+                        <a href="#aboutme">About</a>
+                    </li>
+                    <li>
+                        <a href="#services">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contacts</a>
+                    </li>     
+                </ul>
+            </nav>  
+            <div class="intro-text">
+                <p>FRONT-END, DEVELOPER</p>
+                <h1>Hello, I am <span>Ashu</span><br> from Rewa</h1>
+            </div>   
+        </div>
+    </div>
+    <div id="aboutme">
+        <div class="about-container">
+            <div class="about-row">
+                    <div class="about-col-1">
+                            <img src="profile_img.webp">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="caption">About Me!</h1>
+                        <p>My name is Ashu Singh, I am from Rewa M.p.I have completed my B.tech from Global Engineering college Jabalpur in the stream of Computer Science in 2022.I did intership at KIKHE PRIVATE LIMITED as Junior Software Engineer duration was 6 months after that I joined BTSOFT IT SOLUTIONS as Software Developer duration was 6 months. Now I am pursuing M.tech in the stream of Computer science.</p>
+                        <div class="about-tab-div">
+                            <div class="about-links active-link" onclick="openTabContent('skills')">Skills</div>
+                            <div class="about-links" onclick="openTabContent('education')">Education</div>
+                            <div class="about-links" onclick="openTabContent('experience')">Experience</div>
+                            <div class="about-links" onclick="openTabContent('certification')">Certification</div>
+                        </div>
+                        <div class="about-tab-content active-link" id="skills">
+                            <ul>
+                                <li><span>Front-End developer</span><br>
+                                    Developemt webApplication and hosting
+                                </li>
+    
+                                <li>
+                                    <span>
+                                        Frontend Developemt
+                                    </span><br>
+                                    JavaScript ReactJS HTML CSS
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="about-tab-content" id="education">
+                            <ul>
+                                <li><span>Batchlor of Technology</span><br>
+                                   Computer Science
+                                </li>
+                                <li><span>10+2</span><br>
+                                    St.Mary School
+                                </li>
+                                <li>
+                                    <span>
+                                       10
+                                    </span><br>
+                                    St.Mary School
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="about-tab-content" id="experience">
+                            <ul>
+                                <li><span>Aug2023-Feb2024<br>
+                                    Software Developer
+                                </li>
+                                <li><span>June2022-December2022</span><br>
+                                    Junior Software Engineer
+                                </li>
+                                <li>
+                                    <span>
+                                        Frontend Developemt
+                                    </span><br>
+                                    JavaScript ReactJS HTML CSS
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="about-tab-content" id="certification">
+                            <ul>
+                                <li><span>Front-End Developer</span><br>
+                                    Adhyayann It training and placement
+                                </li>
+                                <li><span>4 months course</span><br>
+                                    Live hosted project
+                                </li>
+                                <li>
+                                    <span>
+                                       Project Name
+                                    </span><br>
+                                      Little description
+                                </li>
+                            </ul>
+                        </div>
+                    </div>        
+            </div>
+        </div>
+    </div>
+
+    <!----------------Project/services Section----------------->
+    <div id="services">
+        <div class="services-container">
+                <h1 class="caption1">My Projects</h1>
+                <div class="services-list">
+                    <div >
+                        <h2>Employee management</h2>
+                        <p>Showcase expertise in HTML, CSS, JavaScript, and React.js, 
+                            pivotal in crafting the user interface and interactivity of the 
+                            employee management web app.
+                            Using React involves several key components and 
+                            functionalities.
+                            Components to build an application that can add, edit, and 
+                            delete employee records.</p>
+                        <a href="#">Read More1</a>
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div >
+                        <h2>Shopping Web Application</h2>
+                        <p>Developed an e-commerce site with user-friendly features, 
+                            and eﬃcient product management. Implemented HTML, 
+                            CSS, JavaScript, React, Bootstrap for optimal performance 
+                            Contributed to improving user experience through frontend 
+                            optimizations and enhancements</p>
+                        <a href="#">Learn More2</a>
+                    </div>
+                    <div >
+                        <h2>Portfolio Web Application</h2>
+                        <p>Created a personalized portfolio web application to
+                            showcase projects, skills, and achievements. Designed with a 
+                            user-friendly interface, the application highlights 
+                            professional experience, education, and expertise. 
+                            Implemented technologies such as HTML, CSS, Bootstarp 
+                            Implemented user interface components and interactions 
+                            based on design speciﬁcations
+                            Conducted code reviews and implemented best practices for 
+                            performance and maintainability</p>
+                        <a href="#">Learn More3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Contact form Section-->
+    <div id="contact">
+        <div class="container">
+             <div class="contact-row">
+                <div class="contact-left">
+                    <h1 class="caption1">Contact Me!</h1>
+                    <p><img src="send.png" height="15px" width="20px">singh.ashu04072001@gmail.com</p>
+                    <p><img src="phone.png" height="15px" width="20px">8965993057</p>
+                    <div class="social-media-icons">
+                          <a href="https://www.linkedin.com/in/ashu-singh-b537a0202"><img src="linkedIb_icon.png"></a>
+                          <a><img src="facebook_icon.png"></a>
+                          <a><img src="twitter.png"></a>
+                          <a href="https://www.instagram.com/gdAshu.Singh/"><img src="instagram_icon.png"></a>
+                    </div>
+                    <div class="download-resume">
+                           <button><a href="final_bg.jpg">Download Resume</a></button>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required autocomplete="off">
+                        <input type="email" name="Email" placeholder="Your email" required autocomplete="off">
+                        <textarea name="Message" rows="6" cols="6" placeholder="Your message"></textarea autocomplete="off">
+                        <button type="submit" style="width: 30%; font-size: 18px;height: 50px; border-radius: 6px; border:0; outline: none; cursor: pointer;">Submit</button>
+                    </form>
+                    <span id="confirm-submit"></span>
+                </div>
+             </div>
+        </div>
+        <div id="copyright">
+            <p>@copyright made by Ashu Singh with <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    </body>
+    <script src="script2.js"></script>
+</body>
 </html>
